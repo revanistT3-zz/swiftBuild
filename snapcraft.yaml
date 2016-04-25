@@ -1,12 +1,12 @@
-name: mines
+name: app-name
 version: 0.1
-summary: minesweaper
-description: CLI minesweaper app written in swift
+summary: summery
+description: description
 parts:
-  mines:
+  main:
     plugin: make
     source: .
 
 apps:
-  mines:
-    command: bin/mines
+  app-name:
+    command: bin/app-name

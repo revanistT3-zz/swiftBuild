@@ -1,5 +1,5 @@
 PWD=$(shell pwd)
-APP_NAME=mines
+APP_NAME=app-name
 BUILD_PATH=$(PWD)/build
 
 all: clean
@@ -10,7 +10,7 @@ all: clean
 
 install:
 	mkdir $(DESTDIR)/bin
-	install -m755 ./build/mines $(DESTDIR)/bin/mines
+	install -m755 ./build/$(APP_NAME) $(DESTDIR)/bin/$(APP_NAME)
 
 clean:
 	rm -rf build
