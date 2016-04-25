@@ -1,0 +1,12 @@
+name: mines
+version: 0.1
+summary: minesweaper
+description: CLI minesweaper app written in swift
+parts:
+  mines:
+    plugin: make
+    source: .
+
+apps:
+  mines:
+    command: bin/mines
