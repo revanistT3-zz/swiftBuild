@@ -1,6 +1,6 @@
 PWD=$(shell pwd)
-APP_NAME=app-name
-BUILD_PATH=$(PWD)/build
+APP_NAME=app_name
+BUILD_PATH=$(PWD)/.build
 
 all: clean
 	mkdir -p $(BUILD_PATH)
@@ -10,7 +10,7 @@ all: clean
 
 install:
 	mkdir $(DESTDIR)/bin
-	install -m755 ./build/$(APP_NAME) $(DESTDIR)/bin/$(APP_NAME)
+	install -m755 $(BUILD_PATH)/$(APP_NAME) $(DESTDIR)/bin/$(APP_NAME)
 
 clean:
-	rm -rf build
+	rm -rf $(BUILD_PATH)
